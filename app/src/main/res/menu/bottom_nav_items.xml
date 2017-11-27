@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_tarjetas"
+        android:title="@string/menu_tarjeta"
+        android:icon="@drawable/ic_credit_card_black_24dp"
+        />
+
+    <item
+        android:id="@+id/menu_promociones"
+        android:title="@string/menu_promociones"
+        android:icon="@drawable/ic_new_releases_black_24dp"
+        />
+
+    <item
+        android:id="@+id/menu_multimedia"
+        android:title="@string/menu_multimedia"
+        android:icon="@drawable/ic_music_video_black_24dp" />
+</menu>

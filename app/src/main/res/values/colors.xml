@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_home">#009688</color>
+    <color name="color_search">#2196F3</color>
+    <color name="color_notifications">#9C27B0</color>
+
+    <!--    <color name="colorPrimary">#009688</color>!-->
+    <color name="colorPrimary">#005eb8</color>
+    <!-- <color name="colorPrimaryDark">#00796B</color>!-->
+    <color name="colorPrimaryDark">#004b87</color>
+    <color name="primaryLight">#B2DFDB</color>
+
+    <color name="colorAccent">#00a3e0</color>
+    <color name="colorUnirme">#00796B</color>
+    <color name="redError">#F4364C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="black">#000000</color>
+
+    <color name="color1">#CE232A</color>
+    <color name="color2">#7F35B2</color>
+    <color name="color3">#0050B5</color>    <!-- Bottom Navigation Color colours -->
+    <color name="bottom_nav_item_unchecked_color">#40222222</color>
+    <color name="bottomNavColor_1">@color/color1</color>
+    <color name="bottomNavColor_2">@color/color2</color>
+    <color name="bottomNavColor_3">@color/color3</color>
+    <color name="bottomNavColor_4">#694842</color>
+    <color name="bottomNavColor_5">#2196F3</color>
+
+    <!--others colors-->
+    <color name="md_grey_50">#FAFAFA</color>
+    <color name="immersive_bars">#8a000000</color>
+
+</resources>

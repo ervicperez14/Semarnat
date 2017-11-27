@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">TVA - Semarnat</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Correo</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="prompt_name">Nombre</string>
+    <string name="prompt_phone">Celular</string>
+    <string name="prompt_distrito">Distrito</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="win_login">Registra tus datos</string>
+    <string name="text_home">Home Fragment</string>
+    <string name="text_notifications">Notifications Fragment</string>
+    <string name="text_search">Search Fragment</string>
+
+    <string name="menu_tarjeta">Tarjetas</string>
+    <string name="menu_promociones">Promociones</string>
+    <string name="menu_multimedia">Multimedia</string>
+    <string name="menu_viaja">Viaja con nosotros</string>
+    <string name="menu_consu">Sitio</string>
+    <string name="action_borrar">Borrar Mensajes</string>
+    <string name="action_descargar">Descargar Mensajes</string>
+    <string name="action_settings">Opciones</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <array name="reveal_bottom_nav_bg">
+        <item>@color/bottomNavColor_1</item>
+        <item>@color/bottomNavColor_2</item>
+        <item>@color/bottomNavColor_3</item>
+        <item>@color/bottomNavColor_4</item>
+        <item>@color/bottomNavColor_5</item>
+    </array>
+
+</resources>

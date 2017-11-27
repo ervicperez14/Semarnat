@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/white"
+
+    tools:context="semarnat.mac.ervic.nexura.semarnat.Tarjetas">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/iv_tarjetas"
+                android:src="@drawable/chedraui_tarjeta_semarnat"
+                android:layout_centerHorizontal="true"
+
+                />
+
+            <ImageView
+                android:layout_below="@+id/iv_tarjetas"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:id="@+id/bar_code"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_codigo"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bar_code"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_codigo"
+                android:layout_marginTop="10dp"
+                android:text="Ingrese la cantidad del ticket para asegurar tu descuento"
+                android:id="@+id/tv_texto"
+                android:layout_centerHorizontal="true"
+                />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_texto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/et_ticket"
+                />
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/et_ticket"
+                android:background="@drawable/ticket"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
