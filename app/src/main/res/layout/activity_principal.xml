@@ -110,7 +110,7 @@
             <ImageButton
                 android:layout_width="220dp"
                 android:layout_height="70dp"
-                android:src="@drawable/elektra_logo_noborder"
+                android:src="@drawable/elektra_logo_noborder_agua"
                 android:scaleType="fitCenter"
                 android:layout_marginLeft="10dp"
                 android:background="@android:color/transparent"

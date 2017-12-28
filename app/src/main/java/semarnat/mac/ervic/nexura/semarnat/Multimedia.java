@@ -1,6 +1,7 @@
 package semarnat.mac.ervic.nexura.semarnat;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.VideoView;
 
 
@@ -27,8 +29,7 @@ public class Multimedia extends Fragment {
     Context context;
     private OnFragmentInteractionListener mListener;
     View v;
-    VideoView videoView;
-
+    ImageView btn_video;
     public Multimedia() {
         // Required empty public constructor
     }
@@ -60,67 +61,19 @@ public class Multimedia extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         context = getContext();
-        v = inflater.inflate(R.layout.fragment_multimedia_chedrahui,container,false);
-        videoView = (VideoView) v.findViewById(R.id.vw_multimedia);
-        setUpVideoView();
+        v = inflater.inflate(R.layout.fragment_multimedia,container,false);
+        btn_video = (ImageView) v.findViewById(R.id.btn_imagen);
+        btn_video.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.youtube.com/watch?v=5pIdYdnV1f0");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
         // Inflate the layout for this fragment
         return v;
     }
-    private void setUpVideoView() {
-        // Prepara la URI del vídeo que será reproducido.
-        String uriPath = "android.resource://" + getActivity().getPackageName()
-                + "/" + R.raw.elektra_aniversario_sonrisas;
-        Uri uri = Uri.parse(uriPath);
-
-        // Se crean los controles multimedia.
-
-        CustomMediaController mediaController = new CustomMediaController(getActivity());
-
-        // Inicializa la VideoView.
-        // Asigna los controles multimedia a la VideoView.
-        videoView.setMediaController(mediaController);
-        try {
-            // Asigna la URI del vídeo que será reproducido a la vista.
-            videoView.setVideoURI(uri);
-            // Se asigna el foco a la VideoView.
-            videoView.requestFocus();
-        } catch (Exception e) {
-            Log.e("Error", e.getMessage());
-            e.printStackTrace();
-        }
-
-        /*
-         * Se asigna un listener que nos informa cuando el vídeo
-         * está listo para ser reproducido.
-         */
-        videoView.setOnPreparedListener(videoViewListener);
-    }
-
-    private MediaPlayer.OnPreparedListener videoViewListener =
-            new MediaPlayer.OnPreparedListener() {
-                @Override
-                public void onPrepared(MediaPlayer mediaPlayer) {
-            /*
-             * Se indica al reproductor multimedia que el vídeo
-             * se reproducirá en un loop (on repeat).
-             */
-                    mediaPlayer.setLooping(true);
-
-                    if (0 == 0) {
-                /*
-                 * Si tenemos una posición en savedInstanceState,
-                 * el vídeo debería comenzar desde aquí.
-                 */
-                        videoView.start();
-                    } else {
-                /*
-                 * Si venimos de un Activity "resumed",
-                 * la reproducción del vídeo será pausada.
-                 */
-                        videoView.pause();
-                    }
-                }
-            };
 
 
     // TODO: Rename method, update argument and hook method into UI event

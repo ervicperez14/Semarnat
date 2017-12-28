@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.pushbots.push.Pushbots;
 
@@ -47,8 +48,11 @@ public class Principal extends AppCompatActivity {
         btn_apartadoA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Socio comercial inactivo.", Toast.LENGTH_SHORT).show();
+                /**
                 Intent intent = new Intent(Principal.this,ApartadoA.class);
                 startActivity(intent);
+                 **/
             }
         });
 

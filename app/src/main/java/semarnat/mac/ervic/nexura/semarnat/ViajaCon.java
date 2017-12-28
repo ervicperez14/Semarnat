@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 
 /**
@@ -57,12 +58,12 @@ public class ViajaCon extends Fragment {
         progress.setMessage("Por favor espere ...");
         progress.setCancelable(false);
         progress.setIndeterminate(true);
-        progress.show();
-
-        myWebView.loadUrl("https://m.pricetravel.com.mx/");
+        myWebView.loadUrl("http://www.priceres.com.mx/generico/paquetes");
+        myWebView.setWebViewClient(new WebViewClient());
         myWebView.getSettings().setJavaScriptEnabled(true);
         myWebView.getSettings().setUserAgentString("Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3");
 
+        progress.show();
 
         Thread timerTread = new Thread(){
             public void run(){

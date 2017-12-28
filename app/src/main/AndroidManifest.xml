@@ -3,15 +3,10 @@
     package="semarnat.mac.ervic.nexura.semarnat">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.READ_PROFILE" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.CAMERA" />
     <!-- GCM connects to Google Services. -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- GCM requires a Google account. -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.example.sampleapp.permission.C2D_MESSAGE" />
     <!-- This app has permission to register and receive dataf message. -->
@@ -68,18 +63,6 @@
         <activity
             android:name=".ApartadoA"
             android:logo="@drawable/elektra_logo"
-            android:parentActivityName=".Principal"
-            android:theme="@style/NoTitle" />
-        <activity
-            android:name=".ApartadoB"
-            android:parentActivityName=".Principal"
-            android:theme="@style/NoTitle" />
-        <activity
-            android:name=".ApartadoC"
-            android:parentActivityName=".Principal"
-            android:theme="@style/NoTitle" />
-        <activity
-            android:name=".ApartadoD"
             android:parentActivityName=".Principal"
             android:theme="@style/NoTitle" />
         <activity
